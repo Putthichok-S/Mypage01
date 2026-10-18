@@ -1,28 +1,87 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>putthichok</title>
+  <title>My Page v2 - Natapat</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-<img src="Shirou.jpg" alt="this is Shirou image" style="width: 326px; height: 404px;">
-  <h1>hello</h1>
-  ฉัน Amiya Shirou<br>
-    ชื่อเล่นฉันคือ Shirou<br>
-    สาขา : CAI<br>
-    กลุ่มเรียน : 1.2-1<br>
-     <hr style="height:10px; border:none; background-color:#000;">
-     
-<p><b class="term">เหตุผลที่อยากเรียน Full stack web development </b>คือ ต้องการพัฒนาทักษะในด้านการพัฒนาเว็บไซต์ทั้งด้าน frontend และ backend เพื่อให้สามารถทำสิ่งที่อยากทำได้</p>
-<p><b class="term">ความคาดหวังต่อวิชานี้</b> คือ สามารถพัฒนาทักษะและองค์ความรู้ในด้านการพัฒนาเว็บไซต์ เพื่อให้สามารถนำไปใช้ประโยชน์ได้</p>
-<p> <b class="term">จุดอ่อนที่ตนเองต้องพัฒนาเกี่ยวกับทักษะ Programming และ แนวทางการพัฒนา</b><br>
-     จุดอ่อนของผมคือ การเขียนโค้ด แนวทางการพัฒนาของผมคือ พัฒนาทักษะในการเขียนโค้ดและการออกแบบโค้ดให้ดีขึ้น</p>
+<body>
 
-   <a href="contact.html">ติดต่อได้ที่</a>
-   <a href="#">กลับไปด้านบน</a>
-   <a href="https://character-stats-and-profiles.fandom.com/wiki/Shirou_Emiya_(Canon,_Fate/Stay_Night)/Sosaxphoenix">นี้คือลิงค์ไปยังเว็ปไซต์ของ Shirou</a>
+  <div class="container">
+    <!-- Layout Profile ด้วย Table (slide 2 - หน้า 59) -->
+    <!-- วิธีแก้ Challenge: กำหนด padding-left ในคลาส .profile-info เพื่อสร้างระยะห่างระหว่างรูปกับข้อความ -->
+    <table class="profile-table">
+      <tr>
+        <td style="width: 160px;">
+          <img src="Shirou.jpg" alt="Profile Image" class="profile-img">
+        </td>
+        <td class="profile-info">
+          <h1>นายพุฒิโชค แสงแก้ว</h1>
+          <p><strong>ตำแหน่ง:</strong> นักศึกษา</p>
+          <p><strong>สาขาวิชา:</strong> วิศกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ </p>
+          <p><strong>สถาบันการศึกษา:</strong> สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</p>
+        </td>
+      </tr>
+    </table>
 
+    <!-- ประวัติสั้น ๆ (About Me) -->
+    <h2>About Me</h2>
+    <p>
+      สวัสดีครับ ผมชื่อพุฒิโชค แสงแก้ว ปัจจุบันกำลังศึกษาและสนใจการพัฒนาเว็บไซต์ รวมถึงการเขียนโปรแกรมและการสร้างสรรค์เนื้อหาดิจิทัล มุ่งมั่นพัฒนาตนเองผ่านการเรียนรู้เทคโนโลยีใหม่ ๆ อย่างสม่ำเสมอ
+    </p>
+    <hr>
+
+    <!-- สิ่งที่ชอบทาน 3 อย่าง (ol หรือ ul) -->
+    <h2>เมนูอาหารที่ชอบทาน</h2>
+    <ol class="food-list">
+      <li>ข้าวมันไก่</li>
+      <li>กะเพราหมูสับไข่ดาว</li>
+      <li>ข้าวพัด</li>
+    </ol>
+
+    <hr>
+
+    <!-- ประสบการณ์ (Experience) -->
+    <h2>Experience</h2>
+    <p>
+      • ได้สร้างเว็บไซต์ส่วนตัวเพื่อแสดงผลงานและทักษะการพัฒนาเว็บ<br>
+      • เข้าร่วมโครงการฝึกทักษะและอบรมเชิงปฏิบัติการด้านการเขียนโปรแกรมและการพัฒนาเว็บ
+    </p>
+
+    <hr>
+
+    <!-- Skills & พลัง ในรูปแบบ Table 4 Column (slide 2 - หน้า 60) -->
+    <h2>Skills </h2>
+    <table class="skills-table">
+      <tr>
+        <td>English</td>
+        <td>⭐⭐⭐☆☆</td>
+        <td>SQL</td>
+        <td>⭐⭐☆☆☆</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>⭐⭐☆☆☆</td>
+        <td>Network</td>
+        <td>⭐⭐☆☆☆</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 25px; text-align: center;">
+      <a href="contact.html" class="btn-contact"> หน้าการติดต่อ (Contact Me)</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <a href="https://github.com" target="_blank">My GitHub</a> | 
+        <a href="contact.html">Contact Page</a> |
+        <a href="#top">กลับขึ้นด้านบน</a>
+      </p>
+      <p style="margin-top: 5px;">© 2026 Putthichok Saengkaew. All rights reserved.</p>
+    </footer>
+  </div>
 
 </body>
 </html>

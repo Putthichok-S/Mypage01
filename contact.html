@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-   <meta charset="UTF-8">
-   <title>Contact Form</title>
-   <style>
-       body { font-family: Arial, sans-serif; margin: 40px; }
-       form { max-width: 400px; margin: auto; }
-       label { display: block; margin-top: 15px; }
-       input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
-       button { margin-top: 20px; padding: 10px 20px; }
-   </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Natapat</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h1>Contact Us</h1>
-   <form action="#" method="post">
-       <label for="name">Name</label>
-       <input type="text" id="name" name="name" required>
 
-       <label for="email">Email</label>
-       <input type="email" id="email" name="email" required>
+  <div class="container">
+    <h2>แบบฟอร์มการติดต่อ (Contact Form)</h2>
+    <p>หากต้องการสอบถามข้อมูลหรือติดต่องาน สามารถกรอกแบบฟอร์มด้านล่างนี้ได้เลยครับ</p>
 
-       <label for="message">Message</label>
-       <textarea id="message" name="message" rows="5" required></textarea>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">ชื่อ - นามสกุล:</label>
+        <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+      </div>
 
-       <button type="submit">Send</button>
-   </form>
+      <div class="form-group">
+        <label for="email">อีเมลติดต่อ:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">หัวข้อ:</label>
+        <input type="text" id="subject" name="subject" placeholder="เรื่องที่ต้องการติดต่อ" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">ข้อความ:</label>
+        <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">ส่งข้อความ</button>
+      </div>
+    </form>
+
+    <div style="margin-top: 20px;">
+      <a href="index.html" class="btn-contact">← กลับไปยังหน้าหลัก</a>
+    </div>
+
+    <footer>
+      <p>
+        <a href="https://github.com" target="_blank">My GitHub</a> | 
+        <a href="index.html">Home</a>
+      </p>
+    </footer>
+  </div>
+
 </body>
 </html>
